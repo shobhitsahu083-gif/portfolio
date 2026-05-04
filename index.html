@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shobhit Sahu | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a0a0a;
+    color:#fff;
+}
+
+/* NAVBAR */
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 50px;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+}
+
+header h1{
+    color:#00f7ff;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f7ff;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.hero h2{
+    font-size:50px;
+}
+
+.hero span{
+    background:linear-gradient(90deg,#00f7ff,#00ff88);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    margin-top:10px;
+    color:#aaa;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:linear-gradient(90deg,#00f7ff,#00ff88);
+    color:#000;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* SECTION */
+section{
+    padding:80px 50px;
+}
+
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#111;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+/* PROJECTS */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#aaa;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Shobhit</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Hi, I'm <span>Shobhit Sahu</span></h2>
+    <p>BTech CSE Student | Frontend Developer</p>
+
+    <a href="mailto:shobhitsahu083@gmail.com">
+        <button class="btn">Hire Me</button>
+    </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a Computer Science student at Lovely Professional University.
+            I build modern, responsive websites and enjoy solving real-world problems
+            through technology. Currently exploring React and backend development.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React.js</div>
+        <div class="skill">MySQL</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Dairy Product Website</h3>
+            <p>Responsive online dairy selling platform.</p>
+            <a href="https://shobhitsahu083-gif.github.io/dairy-product-purchasing/" target="_blank">
+                <button class="btn">View</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Electrician Booking</h3>
+            <p>Book electricians easily for home services.</p>
+            <button class="btn">Coming Soon</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: shobhitsahu083@gmail.com</p>
+        <p>Phone: +91 6393298193</p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/shobhit-sahu-59314a317" target="_blank">Profile</a>
+        </p>
+        <p>
+            GitHub:
+            <a href="https://github.com/shobhitsahu083-gif" target="_blank">Profile</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Shobhit Sahu | Designed with ❤️
+</footer>
+
+</body>
+</html>
